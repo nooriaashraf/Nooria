@@ -22,26 +22,26 @@ public class KeyboardActions {
         driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		/*
-		//Enter Key
-        driver.get("https://www.google.com");
-        driver.findElement(By.name("q")).sendKeys("selenium" +Keys.ENTER);
+	   //Enter Key
+         driver.get("https://www.google.com");
+         driver.findElement(By.name("q")).sendKeys("selenium" +Keys.ENTER);
         */
 		
 		/*
        //Key Down()
-        driver.get("https://www.google.com");
-        driver.findElement(By.name("q")).sendKeys("selenium" +Keys.ENTER);
-        Actions actionProvider = new Actions(driver);
-        Action keydown = actionProvider.keyDown(Keys.CONTROL).sendKeys("a").build();
-        keydown.perform();
+         driver.get("https://www.google.com");
+         driver.findElement(By.name("q")).sendKeys("selenium" +Keys.ENTER);
+         Actions actionProvider = new Actions(driver);
+         Action keydown = actionProvider.keyDown(Keys.CONTROL).sendKeys("a").build();
+         keydown.perform();
         */
 		
-		//key up()
+	   //key up()
 		 driver.get("https://www.google.com");
-	        WebElement searchbox = driver.findElement(By.name("q"));
-	        Actions actionProvider = new Actions(driver);
-	        actionProvider.keyDown(Keys.SHIFT).sendKeys(searchbox, "selenium").keyUp(Keys.SHIFT).sendKeys("selenium");
-	        searchbox.clear();
+	     WebElement searchbox = driver.findElement(By.name("q"));
+	     Actions actionProvider = new Actions(driver);
+	     actionProvider.keyDown(Keys.SHIFT).sendKeys(searchbox, "selenium").keyUp(Keys.SHIFT).sendKeys("selenium");
+	     searchbox.clear();
 	              
 	      System.out.print("This is executed & passed");
         
